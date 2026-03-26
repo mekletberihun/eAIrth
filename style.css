@@ -7,15 +7,28 @@ h1 {
   color: green;
 }
 
+/* Header style */
 header {
-  background-color: #0b3d2e; /* dark green vibe */
+  display: flex;
+  justify-content: space-between; /* logo left, nav right */
+  align-items: center;            /* vertically center items */
+  padding: 15px 30px;
+  background-color: #0b3d2e;     /* dark green */
   color: white;
-  padding: 15px;
-  text-align: center;
 }
 
+/* Logo style */
+.logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Navigation links */
 nav ul {
   list-style: none;
+  display: flex; /* horizontal menu */
+  margin: 0;
   padding: 0;
 }
 
@@ -31,5 +44,5 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #a5d6a7; /* light green hover */
 }
