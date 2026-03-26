@@ -10,25 +10,19 @@ h1 {
 /* Header style */
 header {
   display: flex;
-  justify-content: space-between; /* logo left, nav right */
-  align-items: center;            /* vertically center items */
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 30px;
-  background-color: #0b3d2e;     /* dark green */
+  background-color: #0b3d2e; /* this is the dark green background */
   color: white;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
+.logo img {
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px; /* spacing so nav doesn’t touch logo */
 }
 
-/* Logo style */
-.logo h1 {
-  margin: 0;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
 
 /* Navigation links */
 nav ul {
