@@ -9,40 +9,41 @@ h1 {
 
 /* Header style */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex;                  /* use flexbox */
+  justify-content: space-between; /* logo left, nav right */
+  align-items: center;            /* vertically center items */
   padding: 15px 30px;
-  background-color: #0b3d2e; /* this is the dark green background */
+  background-color: #0b3d2e;     /* dark green */
   color: white;
 }
 
+
+/* logo image */
 .logo img {
-  height: 50px;
-  vertical-align: middle;
-  margin-right: 10px; /* spacing so nav doesn’t touch logo */
+  height: 300px;                  /* adjust size as needed */
 }
 
-
-/* Navigation links */
+/* navigation menu */
 nav ul {
   list-style: none;
-  display: flex; /* horizontal menu */
+  display: flex;                 /* horizontal tabs */
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 15px;
+  margin-left: 30px;             /* spacing between tabs */
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #a5d6a7; /* light green hover */
+  color: #a5d6a7;               /* light green hover */
+  transform: scale(1.05);       /* subtle pop */
 }
