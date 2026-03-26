@@ -17,6 +17,12 @@ header {
   color: white;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 /* Logo style */
 .logo h1 {
   margin: 0;
