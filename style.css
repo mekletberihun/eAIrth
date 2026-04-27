@@ -15,12 +15,14 @@ header {
   padding: 5px 20px;
   background-color:  #BAED91;     /* green */
   color: white;
+  overflow: hidden;      /* prevents bar from growing */
 }
-
 
 /* logo image */
 .logo img {
-  height: 100px;                  /* adjust size as needed */
+  height: 45px;   
+  transform: scale(1.35); /* makes it appear bigger */
+  transform-origin: left center;               /* adjust size as needed */
 }
 
 /* navigation menu */
