@@ -12,8 +12,8 @@ header {
   display: flex;                  /* use flexbox */
   justify-content: space-between; /* logo left, nav right */
   align-items: center;            /* vertically center items */
-  padding: 15px 30px;
-  background-color: #0b3d2e;     /* dark green */
+  padding: 10px 30px;
+  background-color:  #77DD77;     /* dark green */
   color: white;
 }
 
