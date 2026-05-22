@@ -1,6 +1,7 @@
 body {
   font-family: Arial;
   margin: 40px;
+  align-items: center;
 }
 
 h1 {
@@ -12,7 +13,7 @@ header {
   display: flex;                  /* use flexbox */
   justify-content: space-between; /* logo left, nav right */
   align-items: center;            /* vertically center items */
-  padding: 10px 20px;
+  padding: 15px 20px;
   background-color:  #BAED91;     /* green */
   color: white;
   overflow: hidden;      /* prevents bar from growing */
@@ -20,8 +21,7 @@ header {
 
 /* logo image */
 .logo img {
-  height: 45px;   
-  transform: scale(3); /* makes it appear bigger */
+  height: 75px;   
   transform-origin: left center;               /* adjust size as needed */
 }
 
