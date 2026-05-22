@@ -22,7 +22,7 @@ header {
 /* logo image */
 .logo img {
   height: 100px;
-  transform: scale(4) translateY(6px);
+  transform: scale(4) translateY(5px);
   transform-origin: left center;
 }
 
