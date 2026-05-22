@@ -21,7 +21,8 @@ header {
 
 /* logo image */
 .logo img {
-  height: 125px;   
+  height: 100px;
+  scale: 1.5;                          /* increase size */
   transform-origin: left center;               /* adjust size as needed */
 }
 
