@@ -23,7 +23,8 @@ header {
 .logo img {
   height: 100px;
   scale: 4;                          /* increase size */
-  transform-origin: left center;               /* adjust size as needed */
+  transform-origin: left center; 
+  top: 5px;              /* adjust size as needed */
 }
 
 /* navigation menu */
