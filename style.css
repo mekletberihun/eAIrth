@@ -22,7 +22,7 @@ header {
 /* logo image */
 .logo img {
   height: 100px;
-  transform: scale(4) translateY(7.5px);
+  transform: scale(4) translateY(6px);
   transform-origin: left center;
 }
 
@@ -32,6 +32,11 @@ nav ul {
   display: flex;                 /* horizontal tabs */
   margin: 0;
   padding: 0;
+}
+
+/* nudge the whole nav a bit left from the right edge */
+nav {
+  margin-right: 20px;
 }
 
 nav ul li {
