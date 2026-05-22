@@ -24,7 +24,7 @@ header {
   height: 100px;
   scale: 4;                          /* increase size */
   transform-origin: left center; 
-  top: 10px;              /* adjust size as needed */
+  top: 30px;              /* adjust size as needed */
 }
 
 /* navigation menu */
@@ -43,7 +43,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.75rem;
   transition: all 0.3s ease;
 }
 
