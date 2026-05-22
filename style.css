@@ -22,9 +22,8 @@ header {
 /* logo image */
 .logo img {
   height: 100px;
-  scale: 4;                          /* increase size */
-  transform-origin: left center; 
-  top: 30px;              /* adjust size as needed */
+  transform: scale(4) translateY(30px);
+  transform-origin: left center;
 }
 
 /* navigation menu */
@@ -40,7 +39,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #2F5D50;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.75rem;
