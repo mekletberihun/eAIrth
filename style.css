@@ -20,12 +20,21 @@ header {
   overflow: hidden;      /* prevents bar from growing */
 }
 
+
+
+
 /* logo image */
 .logo img {
   height: 100px;
   transform: scale(3) translateY(3px);
   transform-origin: left center;
 }
+
+
+
+
+
+
 
 /* navigation menu */
 nav ul {
