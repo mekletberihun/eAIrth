@@ -65,3 +65,49 @@ nav ul li a:hover {
   color: #a5d6a7;               /* light green hover */
   transform: scale(1.05);       /* subtle pop */
 }
+
+
+/* Section styles */
+
+.mission-block {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.split-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+}
+
+.left-column img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.right-column {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .split-section {
+        flex-direction: column;
+    }
+}
