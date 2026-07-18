@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eairth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@1,400;1,500;1,600&family=Source+Sans+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,6 +23,7 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="team.html">Our Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -27,30 +31,44 @@
 <main>
 
   <!-- Mission Statement -->
-  <section class="mission-block">
-    <h1>Our Mission Statement</h1>
-    <p>
-      eAIrth aims to document, analyze and communicate the impacts of
-      artificial intelligence (AI) on Earth.
-    </p>
+  <section class="mission-block video-mission-block">
+    <video class="mission-video" autoplay muted loop playsinline preload="auto">
+      <source src="bandicut-75.89-113.16.mp4" type="video/mp4">
+    </video>
+    <div class="mission-card">
+      <h1 class="original-font">Our Mission Statement</h1>
+      <p>
+        eAIrth aims to document, analyze and communicate the impacts of
+        artificial intelligence (AI) on Earth.
+      </p>
+    </div>
+    <div class="video-footer">
+      Video credit: Sudeep Gowda — Fall foliage colors in Virginia - 4k Drone view (CC BY 3.0)
+    </div>
   </section>
 
   <!-- Governance & Projects -->
   <section class="split-section">
 
     <div class="left-column">
-      <img src="governance-image.jpg" alt="eAIrth Research">
+      <div class="image-placeholder">Earth research image</div>
     </div>
 
     <div class="right-column">
-      <h2>eAIrth Governance</h2>
+      <div class="heading-stack">
+        <span class="original-font">eAIrth</span>
+        <span class="heading-secondary">Governance</span>
+      </div>
       <p>
         eAIrth is a collective of independent researchers. An advisory group
         comprised of university faculty, staff, students, alums and community
         members advises eAIrth.
       </p>
 
-      <h2>eAIrth Project</h2>
+      <div class="heading-stack">
+        <span class="original-font">eAIrth</span>
+        <span class="heading-secondary">Project</span>
+      </div>
       <p>
         eAIrth is currently undertaking two pilot research projects. The first
         is an Infrastructure Acknowledgement based out of the Spatial Analysis
@@ -63,6 +81,32 @@
 
 </main>
 
+<script>
+  const missionVideo = document.querySelector('.mission-video');
+  const missionStart = 90; // 1:30 in seconds
+  const missionEnd = 112;  // 1:52 in seconds
+
+  if (missionVideo) {
+    missionVideo.muted = true;
+    missionVideo.loop = true;
+
+    const playSegment = () => {
+      if (missionVideo.duration > missionStart) {
+        missionVideo.currentTime = missionStart;
+        missionVideo.play().catch(() => {});
+      }
+    };
+
+    missionVideo.addEventListener('loadedmetadata', playSegment);
+    missionVideo.addEventListener('canplay', playSegment);
+
+    missionVideo.addEventListener('timeupdate', () => {
+      if (missionVideo.currentTime >= missionEnd) {
+        missionVideo.currentTime = missionStart;
+      }
+    });
+  }
+</script>
 
 </body>
 </html>
