@@ -23,7 +23,7 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="team.html">Our Team</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html">Projects</a></li>
     </ul>
   </nav>
 </header>
@@ -31,9 +31,33 @@
 <main>
 
   <section class="team-section">
-    <h1 class="original-font">Our Team</h1>
-    <div class="team-header-image">
-      <img src="image.png" alt="Team visual graphic">
+    <div class="team-header-row">
+      <div class="team-header-image">
+        <img src="mary.jpeg" alt="Mary portrait">
+        <div class="founder-links">
+          <a class="button-link" href="https://www.linkedin.com/in/mary-finley-brook-06901227/" target="_blank" rel="noopener noreferrer">
+            <img src="linkedin.png" alt="LinkedIn">
+            <span class="visually-hidden">LinkedIn</span>
+          </a>
+          <a class="button-link" href="https://www.instagram.com/geoyapti/" target="_blank" rel="noopener noreferrer">
+            <img src="bluesky.webp" alt="Bluesky">
+            <span class="visually-hidden">Bluesky</span>
+          </a>
+          <a class="button-link facebook-link" href="https://www.facebook.com/mary.finleybrook/" target="_blank" rel="noopener noreferrer">
+            <img src="facebook.png" alt="Facebook">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </div>
+      </div>
+      <div class="founder-intro">
+        <h2>Meet the Founder & Director</h2>
+        <p class="founder-bio">
+          Dr. Mary Finley-Brook is a Professor of Geography, Environment, & Sustainability at the University of Richmond whose research focuses on climate justice, energy transitions, environmental policy, and equity in environmental governance. Her work examines how energy systems and environmental decisions affect communities, particularly frontline and historically marginalized populations. Through community-based participatory research, she collaborates with local organizations to advance more equitable approaches to climate action and sustainable development.
+        </p>
+        <p class="founder-bio">
+          Dr. Finley-Brook has conducted extensive research on energy justice, public health, renewable energy access, and the social impacts of environmental change. She has contributed to research on environmental justice in Virginia and beyond, including collaborations addressing energy transitions, pollution, and community resilience. She is the co-author of <a href="https://www.sciencedirect.com/book/monograph/9780128195017/climate-crisis-energy-violence" target="_blank" rel="noopener noreferrer"><em>Climate Crisis, Energy Violence: Mapping Fossil Energy’s Enduring Grasp on Our Precarious Future</em></a> (2024) and has published widely in environmental studies, geography, and sustainability research.
+        </p>
+      </div>
     </div>
     <h2>Meet the Faculty</h2>
     <div class="team-grid">
@@ -99,3 +123,46 @@
   </section>
 
 </main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="logo.png" alt="EaiRth logo">
+      <div class="footer-address">
+        <p>eAIrth Lab</p>
+        <p>410 Westhampton Way</p>
+        <p>University of Richmond</p>
+        <p>VA 23173</p>
+      </div>
+    </div>
+    <!-- Quick Links removed -->
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <ul>
+        <li><span class="footer-contact-label">General</span><a href="mailto:eAIrth@proton.me">eAIrth@proton.me</a></li>
+        <li><span class="footer-contact-label">Community Reports</span><a href="mailto:g00glewatchdog@proton.me">g00glewatchdog@proton.me</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 eAIrth Lab. All rights reserved.</div>
+</footer>
+
+<script>
+  const revealElements = document.querySelectorAll('.team-header-image > img, .card img, .member-photo');
+
+  const revealOnScroll = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  const revealObserver = new IntersectionObserver(revealOnScroll, {
+    threshold: 0.2,
+  });
+
+  revealElements.forEach((el) => revealObserver.observe(el));
+</script>
+</body>
