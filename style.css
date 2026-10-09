@@ -27,7 +27,7 @@ h1 {
     border-radius: 0 0 20px 20px;
 }
 
-..team-section h1.original-font {
+.team-section h1.original-font {
     margin-top: 0;
     margin-bottom: 1rem;
     font-family: 'Instrument Serif', serif;
@@ -827,7 +827,7 @@ main {
     margin: 0;
 }
 
-..card-content h4 {
+.card-content h4 {
     margin: 5px 0 10px;
     font-weight: normal;
     color: gray;
