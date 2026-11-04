@@ -23,8 +23,14 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="team.html">Our Team</a></li>
-      <li><a href="contact.html">Projects</a></li>
+      <li class="has-dropdown">
+        <a href="projects.html">Projects</a>
+        <ul class="dropdown">
+          <li><a href="fellowship.html">Fellowship</a></li>
+        </ul>
+      </li>
       <li><a href="resources.html">Resources</a></li>
+      <li><a href="news.html">In the News</a></li>
     </ul>
   </nav>
 </header>
@@ -48,11 +54,31 @@
     </div>
   </section>
 
+  <!-- Fellowship Banner -->
+  <section class="fellowship-banner">
+    <div class="fellowship-banner-inner">
+      <div class="fellowship-banner-copy">
+        <h2 class="fellowship-banner-title">eAIrth Fellowship</h2>
+        <p class="fellowship-banner-deadline">Application Deadline: November 15, 2026</p>
+        <p class="fellowship-banner-text">
+          A 7-month fellowship with a $1,000 stipend for six Richmond-area thought leaders and artists. Fellows will create a "Signature Piece" on data centers and water to share with policymakers and the community.
+        </p>
+      </div>
+      <div class="fellowship-banner-actions">
+        <a class="fellowship-apply-box" href="https://docs.google.com/forms/d/e/1FAIpQLSdn-8kmqRkZYOwxu8aoqRWHCwRbEXj54_rLgCEMtIhtheCACg/viewform" target="_blank" rel="noopener noreferrer">Apply Now</a>
+        <a class="fellowship-apply-box" href="fellowship.html">More Info</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Governance & Projects -->
   <section class="split-section">
 
     <div class="left-column">
-      <div class="image-placeholder">Earth research image</div>
+      <figure class="data-center-figure">
+        <img src="../media/White%20Oak%20Tech%20Park%20QTS-1%20Data%20Center%202026.jpg" alt="Aerial view of White Oak Tech Park data center">
+        <figcaption>White Oak Tech Park Data Center</figcaption>
+      </figure>
     </div>
 
     <div class="right-column">
@@ -62,7 +88,7 @@
       </div>
       <p>
         eAIrth is a collective of independent researchers. An advisory group
-        comprised of university faculty, staff, students, alums and community
+        comprised of university faculty, staff, students, alumni and community
         members advises eAIrth.
       </p>
 
@@ -73,7 +99,7 @@
       <p>
         eAIrth is currently undertaking two pilot research projects. The first
         is an Infrastructure Acknowledgement based out of the Spatial Analysis
-        Lab (#300 International Center). The second is a case study of Google's
+        is a case study of Richmond area data center development in Chesterfield County.
         data centers in Chesterfield County.
       </p>
     </div>
@@ -81,29 +107,8 @@
   </section>
 
 </main>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-logo">
-      <img src="../media/logo.png" alt="EaiRth logo">
-      <div class="footer-address">
-        <p>eAIrth Lab</p>
-        <p>410 Westhampton Way</p>
-        <p>University of Richmond</p>
-        <p>VA 23173</p>
-      </div>
-    </div>
-    <!-- Quick Links removed -->
-    <div class="footer-contact">
-      <h3>Contact</h3>
-      <ul>
-        <li><span class="footer-contact-label">General</span><a href="mailto:eAIrth@proton.me">eAIrth@proton.me</a></li>
-        <li><span class="footer-contact-label">Community Reports</span><a href="mailto:mbrook@richmond.edu">mbrook@richmond.edu</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-copy">© 2026 eAIrth Lab. All rights reserved.</div>
-</footer>
+<div data-footer-placeholder></div>
+<script src="../footer.js"></script>
 
 <script>
   const missionVideo = document.querySelector('.mission-video');
